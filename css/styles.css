@@ -76,6 +76,15 @@ nav ul li a:hover {
   top:-10px;
   opacity:0.9;
 }
+
+#subtotal{
+  display: none;
+  font-family: "Oswald", sans-serif;
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0px 5px;
+}
  	 	
 .gallery{
   display:flex;
@@ -247,9 +256,6 @@ font-size: 1rem;
   height: auto;
 }
 
-
 }
-
-
 
 

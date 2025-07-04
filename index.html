@@ -37,6 +37,9 @@
         <!-- https://animate.style/ -->
         <h2 class="animate__animated animate__backInLeft">NUESTRAS PIZZAS</h2>
         <div id="cart">
+            <div id="subtotal">
+                <p>Total: $<span id="total-amount">0</span></p>
+            </div>
             <!-- https://fontawesome.com/search?ic=free -->
             <i class="fa badge" id="badge" value="0"><i class="fa-solid fa-cart-shopping fa-lg"></i></i>
         </div>  
@@ -190,10 +193,15 @@
 
     totalPrice=totalPrice+price;
 
-    console.log("Total : "+totalPrice);
+    console.log('Total: $' + totalPrice);
 
     document.getElementById("badge").setAttribute("value",products.length);
     // cambia el valor de la cantidad de productos en el carrito
+    document.getElementById("subtotal").style.display="block";
+    // Total Price tiene el valor total de la compra
+    document.getElementById("total-amount").textContent=totalPrice;
+    
+
     }
     }  
     </script>         
